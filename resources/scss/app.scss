@@ -42,7 +42,7 @@
 
 .card-mc{
     width: 200px;
-    height: 240px;
+    height: 340px;
     background-color: none;
     margin-bottom: 20px;
 }
@@ -56,5 +56,8 @@
   object-fit: cover;
   object-position: top;
 }
-
+.text{
+    display: flex;
+    flex-direction: column
+}
 @import './partials/footer.scss';

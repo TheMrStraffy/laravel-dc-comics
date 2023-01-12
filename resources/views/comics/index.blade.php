@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('content')
-<h1>COMICS</h1>
+<h1 class="m-5">COMICS</h1>
 <main>
 
 
