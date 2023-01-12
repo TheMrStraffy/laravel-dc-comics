@@ -9,9 +9,13 @@
           </div>
           <div class="text">
             {{$comic['title']}}
-            <a href="{{route('comics.show', $comic)}}">
-                <button>Show</button>
-            </a>
+            <div class="sh-cr-btns d-flex">
+
+                <a href="{{route('comics.show', $comic)}}">
+                    <button>Show</button>
+                </a>
+
+            </div>
         </div>
     </div>
   </div>

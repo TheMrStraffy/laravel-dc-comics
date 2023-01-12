@@ -13,7 +13,7 @@
                 <div class="col">
 
                     <h3>Title: {{$comic['title']}}</h3>
-                    <p>Description : {{$comic['description']}}</p>
+                    <p>Description : {!!$comic['description']!!}</p>
                 </div>
                 <div class="col align-self-center">
                     <p>Price: {{$comic['price']}}</p>
