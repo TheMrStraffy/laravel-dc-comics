@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ComicController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,25 +14,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/comic-details/{id}', function($id){
-    $comic_get = array_filter(config('comics'), fn($comic) => $comic['id'] == $id);
-    $comic_key = array_key_first($comic_get);
-    $comic = $comic_get[$comic_key];
+Route::resource('comics', ComicController::class);
 
-    return view('comicDetails', compact('comic'));
-})->name('comicDetails');
 
 Route::get('/', function(){
-    return view('home');
-})->name('home');
-
-Route::get('/comics', function(){
-
-    $comics = config('comics');
-
-
-    return view('comics', compact('comics'));
+    return redirect('/comics');
 })->name('comics');
+
+Route::get('/comics', [ComicController::class, 'index'])->name('comics');
+
+
+// Route::get('/comic-details/{id}', function($id){
+//     return view('comicDetails', compact('comic'));
+// })->name('comicDetails');
+
+
+
 
 Route::get('/characters', function(){
     return view('characters');

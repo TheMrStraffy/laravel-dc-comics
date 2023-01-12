@@ -2,7 +2,7 @@
 
 <header>
     <div class="container d-flex justify-content-between align-items-center h-100">
-        <a href="{{ route('home') }}">
+        <a href="{{ route('comics') }}">
             <div class="logo">
               <img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="dc-logo">
             </div>
