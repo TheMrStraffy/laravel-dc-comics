@@ -1,0 +1,35 @@
+
+header{
+    height: 120px;
+    background-color: white;
+  }
+  .logo{
+      line-height: 120px;
+      height: 100%;
+  }
+
+
+  nav{
+    height: 100%;
+  }
+  ul{
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  li{
+    list-style-type: none;
+    padding: 0px 10px;
+    width: 100%;
+    height: 100%;
+  }
+  a{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    color: #464646;
+  }
+  .active{
+    color: #2b82f9;
+    border-bottom: 3px solid #2b82f9;}

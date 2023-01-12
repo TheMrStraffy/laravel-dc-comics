@@ -1,0 +1,60 @@
+@import '~bootstrap/scss/bootstrap';
+@import './partials/header.scss';
+@import './partials/comicDetails.scss';
+
+// header
+
+// header
+.jumbotron{
+    position: relative;
+  }
+  .currentSeries{
+      position: absolute;
+      bottom: -5%;
+      left: 10%;
+      font-size: 1.3rem;
+      font-weight: 600;
+      background-color: #0282f9;
+      color: white;
+      padding: 10px 25px;
+    }
+  .jmbimg{
+      width: 100%;
+     height: 400px;
+     object-fit: cover;
+     object-position: top;
+   }
+
+   main{
+    padding: 50px 0;
+      background-color: #1c1c1c;
+      color: white;
+
+
+  }
+  .loadMore{
+          background-color: #0282f9;
+          padding: 10px 30px;
+      }
+.container{
+    margin-bottom: 20px;
+}
+
+.card-mc{
+    width: 200px;
+    height: 240px;
+    background-color: none;
+    margin-bottom: 20px;
+}
+.card-box{
+  height: 190px;
+  margin-bottom: 15px;
+}
+.cardImg{
+  width: 200px;
+  height: 190px;
+  object-fit: cover;
+  object-position: top;
+}
+
+@import './partials/footer.scss';
