@@ -24,14 +24,15 @@
     </div>
 
     <div class="container">
-
-        <a  href="{{route('comics.create')}}">
-          <button>Create</button>
-      </a>
+        <div class="btn">
+            <a class="" href="{{route('comics.create')}}">
+              <button>Create</button>
+          </a>
+        </div>
     </div>
 
       <div class="loadMore d-flex justify-content-center">
-        <span>LOAD MORE</span>
+        <span>{{$comics->links()}}</span>
         </div>
   </main>
 

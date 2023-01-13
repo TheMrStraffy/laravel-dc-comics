@@ -6,6 +6,8 @@ use App\Http\Requests\ComicRequest;
 use App\Models\Comic;
 use Illuminate\Http\Request;
 
+
+
 class ComicController extends Controller
 {
     /**
@@ -15,7 +17,7 @@ class ComicController extends Controller
      */
     public function index()
     {
-        $comics = Comic::all();
+        $comics = Comic::orderBy('id','desc')->paginate(5);
         return view('comics.index', compact('comics'));
     }
 

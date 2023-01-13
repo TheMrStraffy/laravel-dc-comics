@@ -26,7 +26,7 @@ class ComicRequest extends FormRequest
         return [
             'title'=>'required|max:150|min:2',
             'image'=>'required|max:255|min:2',
-            'price'=>'required|max:200|min:5',
+            'price'=>'required|max:200|min:1',
             'series'=>'required|max:200|min:2',
             'type'=>'required|max:50|min:2',
         ];
@@ -41,7 +41,7 @@ class ComicRequest extends FormRequest
             'image.min'=>'l immagine ha un minimo di 2 caratteri',
             'price.required'=>'Inserisci un prezzo',
             'price.max'=>'Il prezzo ha un massimo di 200',
-            'price.min'=>'Il prezzo ha un minimo di 5',
+            'price.min'=>'Il prezzo ha un minimo di 1',
             'series.required'=>'Inserisci La serie',
             'series.max'=>'La serie ha un massimo di 200 caratteri',
             'series.min'=>'La serie ha un minimo di 2 caratteri',
