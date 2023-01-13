@@ -1,6 +1,14 @@
 @extends('layouts.main')
 @section('content')
 <h1 class="m-5">COMICS</h1>
+@if (session('deleted'))
+    <div>
+
+        <h2>
+            {{session('deleted')}}
+        </h2>
+    </div>
+@endif
 <main>
 
 
@@ -17,11 +25,6 @@
 
     <div class="container">
 
-        {{-- @if (session('deleted'))
-            <h2>
-                @session('deleted')
-            </h2>
-        @endif --}}
         <a  href="{{route('comics.create')}}">
           <button>Create</button>
       </a>
