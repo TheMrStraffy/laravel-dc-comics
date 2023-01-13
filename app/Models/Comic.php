@@ -9,7 +9,7 @@ use Illuminate\Support\Str;
 class Comic extends Model
 {
     use HasFactory;
-
+    protected $fillable = ['title','description','image','price','series','sale_date','type','slug'];
     public static function generateSlug($string){
         $slug = Str::slug($string, '-');
         $original_slug = $slug;

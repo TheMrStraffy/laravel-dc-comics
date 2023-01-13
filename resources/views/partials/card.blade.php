@@ -14,6 +14,9 @@
                 <a href="{{route('comics.show', $comic)}}">
                     <button>Show</button>
                 </a>
+                <a href="{{route('comics.edit', $comic)}}">
+                    <button>Edit</button>
+                </a>
 
             </div>
         </div>
