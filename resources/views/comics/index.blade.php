@@ -6,6 +6,7 @@
 
     <div class="container d-flex ">
       <div class="row m-auto justify-content-evenly">
+
         @foreach ($comics as $comic)
 
         @include('partials.card')
@@ -15,6 +16,12 @@
     </div>
 
     <div class="container">
+
+        {{-- @if (session('deleted'))
+            <h2>
+                @session('deleted')
+            </h2>
+        @endif --}}
         <a  href="{{route('comics.create')}}">
           <button>Create</button>
       </a>
